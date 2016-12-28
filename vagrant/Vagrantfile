@@ -18,6 +18,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     end
 
     ### for application
-    config.vm.synced_folder '../', '/usr/home/app-user/repos', owner: 'app-user', group: 'app-user', create: true
+    config.vm.synced_folder '../', '/home/vagrant/repos', owner: 'vagrant', group: 'vagrant', create: true
 end
 
