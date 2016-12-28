@@ -1,0 +1,7 @@
+.vagrant
+.DS_Store
+## exclude large files
+*.box
+*.zip
+*.tar
+*.gz
