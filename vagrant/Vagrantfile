@@ -1,0 +1,23 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+VAGRANTFILE_API_VERSION = '2'
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+    config.vm.box = 'takoyaki-memo-local'
+
+    ## define basic info
+    config.vm.define 'takoyaki_memo_local' do |d|
+        d.vm.hostname = 'takoyaki-memo-local'
+        d.vm.network 'private_network', ip: '192.168.50.12'
+    end
+
+    ## define spec
+    config.vm.provider 'virtualbox' do |p|
+        p.memory = 2048
+    end
+
+    ### for application
+    config.vm.synced_folder '../', '/usr/home/app-user/repos', owner: 'app-user', group: 'app-user', create: true
+end
+
