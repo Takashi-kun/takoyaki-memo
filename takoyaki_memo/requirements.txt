@@ -1,0 +1,8 @@
+Flask==0.11.1
+flask-restful==0.3.5
+google-cloud==0.22.0
+gunicorn==19.6.0
+oauth2client==4.0.0
+Flask-SQLAlchemy==2.1
+PyMySQL==0.7.9
+six==1.10.0

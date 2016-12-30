@@ -5,3 +5,10 @@ threadsafe: true
 handlers:
 - url: /.*
   script: main.app
+
+beta_settings:
+  cloud_sql_instances: takoyaki-memo:asia-northeast1:takoyaki-memo-db
+
+libraries:
+- name: MySQLdb
+  version: "latest"
