@@ -5,5 +5,9 @@
 *.zip
 *.tar
 *.gz
+## exclude pycache
 *.pyc
+## exclude password file
 config.py
+## exclude vendors
+lib
