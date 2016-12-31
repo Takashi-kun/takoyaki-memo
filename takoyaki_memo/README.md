@@ -60,7 +60,7 @@ else:
 
 * run app on VM
 ```bash
-$ cloud_sql_proxy -instances=takoyaki-memo:asia-northeast1:takoyaki-memo-db=tcp:3306
+$ cloud_sql_proxy -instances=<YOUR_CONNECTION_NAME>=tcp:3306
 $ cd takoyaki_memo
 ## run local and cloud_sql
 $ python main.py
